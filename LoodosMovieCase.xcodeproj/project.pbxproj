@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF1F823E2EEC788A89B99223 /* Pods_LoodosMovieCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C94660C12D6503B6CAA738D /* Pods_LoodosMovieCase.framework */; };
 		F97F8F972494D22400068253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F8F962494D22400068253 /* AppDelegate.swift */; };
 		F97F8F992494D22400068253 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F8F982494D22400068253 /* SceneDelegate.swift */; };
 		F97F8F9B2494D22400068253 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F8F9A2494D22400068253 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C94660C12D6503B6CAA738D /* Pods_LoodosMovieCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoodosMovieCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD19CA4B42B2A93774096E2 /* Pods-LoodosMovieCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosMovieCase.release.xcconfig"; path = "Target Support Files/Pods-LoodosMovieCase/Pods-LoodosMovieCase.release.xcconfig"; sourceTree = "<group>"; };
+		DAE2B4B1D914A0A268536389 /* Pods-LoodosMovieCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosMovieCase.debug.xcconfig"; path = "Target Support Files/Pods-LoodosMovieCase/Pods-LoodosMovieCase.debug.xcconfig"; sourceTree = "<group>"; };
 		F97F8F932494D22400068253 /* LoodosMovieCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosMovieCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97F8F962494D22400068253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F97F8F982494D22400068253 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1F823E2EEC788A89B99223 /* Pods_LoodosMovieCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4AA90D175B90DD5FCC4E2EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAE2B4B1D914A0A268536389 /* Pods-LoodosMovieCase.debug.xcconfig */,
+				AAD19CA4B42B2A93774096E2 /* Pods-LoodosMovieCase.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA3A54E80DF91D8AB508799C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C94660C12D6503B6CAA738D /* Pods_LoodosMovieCase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F97F8F8A2494D22400068253 = {
 			isa = PBXGroup;
 			children = (
 				F97F8F952494D22400068253 /* LoodosMovieCase */,
 				F97F8F942494D22400068253 /* Products */,
+				C4AA90D175B90DD5FCC4E2EC /* Pods */,
+				DA3A54E80DF91D8AB508799C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F97F8FA72494D22500068253 /* Build configuration list for PBXNativeTarget "LoodosMovieCase" */;
 			buildPhases = (
+				EE00B6A7173160B0803E7C3C /* [CP] Check Pods Manifest.lock */,
 				F97F8F8F2494D22400068253 /* Sources */,
 				F97F8F902494D22400068253 /* Frameworks */,
 				F97F8F912494D22400068253 /* Resources */,
+				95C13E93E4CE31B665C63BCE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,6 +199,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95C13E93E4CE31B665C63BCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoodosMovieCase/Pods-LoodosMovieCase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoodosMovieCase/Pods-LoodosMovieCase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoodosMovieCase/Pods-LoodosMovieCase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE00B6A7173160B0803E7C3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoodosMovieCase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F97F8F8F2494D22400068253 /* Sources */ = {
@@ -322,6 +391,7 @@
 		};
 		F97F8FA82494D22500068253 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAE2B4B1D914A0A268536389 /* Pods-LoodosMovieCase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -340,6 +410,7 @@
 		};
 		F97F8FA92494D22500068253 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAD19CA4B42B2A93774096E2 /* Pods-LoodosMovieCase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
