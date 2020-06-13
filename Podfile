@@ -4,6 +4,11 @@
 target 'LoodosMovieCase' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  pod 'PKHUD', '~> 5.1'
+  pod 'Kingfisher', '4.10.0'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/RemoteConfig'
+  pod 'Firebase/Messaging'
 
   # Pods for LoodosMovieCase
 
