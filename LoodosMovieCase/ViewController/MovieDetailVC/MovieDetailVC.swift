@@ -31,7 +31,9 @@ class MovieDetailVC: UIViewController {
     private var movieDetail: MovieDetailModel? {
         didSet{
             Analytics.logEvent("movieDetail", parameters: try! movieDetail?.asDictionary())
-            tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
     }
     var movieId: String? {

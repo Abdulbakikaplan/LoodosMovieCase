@@ -85,7 +85,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         
         let movie = movies[indexPath.row]
         vc.movieId = movie.imdbID
-        animateNavigate(vc: vc)
+        self.animateNavigate(vc: vc)
 
     }
 
