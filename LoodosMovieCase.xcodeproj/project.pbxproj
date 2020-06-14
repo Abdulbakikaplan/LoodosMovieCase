@@ -10,6 +10,8 @@
 		CF1F823E2EEC788A89B99223 /* Pods_LoodosMovieCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C94660C12D6503B6CAA738D /* Pods_LoodosMovieCase.framework */; };
 		F951F6C5249632D100561838 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951F6C3249632D100561838 /* SplashVC.swift */; };
 		F951F6C6249632D100561838 /* SplashVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F951F6C4249632D100561838 /* SplashVC.xib */; };
+		F951F6C82496356D00561838 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951F6C72496356D00561838 /* Reachability.swift */; };
+		F951F6CB249635C300561838 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951F6CA249635C300561838 /* Extension+UIViewController.swift */; };
 		F97F8F972494D22400068253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F8F962494D22400068253 /* AppDelegate.swift */; };
 		F97F8F9B2494D22400068253 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F8F9A2494D22400068253 /* ViewController.swift */; };
 		F97F8F9E2494D22400068253 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97F8F9C2494D22400068253 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 		DAE2B4B1D914A0A268536389 /* Pods-LoodosMovieCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosMovieCase.debug.xcconfig"; path = "Target Support Files/Pods-LoodosMovieCase/Pods-LoodosMovieCase.debug.xcconfig"; sourceTree = "<group>"; };
 		F951F6C3249632D100561838 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		F951F6C4249632D100561838 /* SplashVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashVC.xib; sourceTree = "<group>"; };
+		F951F6C72496356D00561838 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F951F6CA249635C300561838 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
 		F97F8F932494D22400068253 /* LoodosMovieCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosMovieCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97F8F962494D22400068253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F97F8F9A2494D22400068253 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,14 @@
 			path = SplashVC;
 			sourceTree = "<group>";
 		};
+		F951F6C9249635B200561838 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F951F6CA249635C300561838 /* Extension+UIViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		F97F8F8A2494D22400068253 = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +145,9 @@
 		F97F8FAA2494D63800068253 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				F951F6C9249635B200561838 /* Extension */,
 				F97F8FCB2494E15F00068253 /* RCValues.swift */,
+				F951F6C72496356D00561838 /* Reachability.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -327,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F951F6CB249635C300561838 /* Extension+UIViewController.swift in Sources */,
 				F97F8FCC2494E15F00068253 /* RCValues.swift in Sources */,
 				F97F8FC42494D9F200068253 /* NetworkLogger.swift in Sources */,
 				F97F8FC22494D9DD00068253 /* Router.swift in Sources */,
@@ -335,6 +350,7 @@
 				F97F8F972494D22400068253 /* AppDelegate.swift in Sources */,
 				F97F8FB52494D91C00068253 /* JSONParameterEncoder.swift in Sources */,
 				F97F8FBE2494D9B700068253 /* HTTPTask.swift in Sources */,
+				F951F6C82496356D00561838 /* Reachability.swift in Sources */,
 				F97F8FB82494D95900068253 /* NetworkManager.swift in Sources */,
 				F97F8FB12494D87600068253 /* ParameterEncoding.swift in Sources */,
 				F97F8FB32494D90500068253 /* URLParameterEncoding.swift in Sources */,
