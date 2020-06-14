@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-LoodosMovieCase/Pods-LoodosMovieCase-frameworks.sh
+${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework
+${BUILT_PRODUCTS_DIR}/Protobuf/protobuf.framework
+${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework
