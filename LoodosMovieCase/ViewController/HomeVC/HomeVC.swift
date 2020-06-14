@@ -85,14 +85,15 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         
         let movie = movies[indexPath.row]
         vc.movieId = movie.imdbID
+        animateNavigate(vc: vc)
 
-        self.navigationController?.pushViewController(vc, animated: true)
     }
 
      func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return Constant.movieCellHeight
     }
     
+
     
 }
 
