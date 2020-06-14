@@ -81,7 +81,12 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
 
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = MovieDetailVC(nibName: "MovieDetailVC", bundle: nil)
         
+        let movie = movies[indexPath.row]
+        vc.movieId = movie.imdbID
+
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
      func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
