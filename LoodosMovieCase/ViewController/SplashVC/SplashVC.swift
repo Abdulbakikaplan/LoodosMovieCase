@@ -13,8 +13,13 @@ class SplashVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getValuesFromFRC()
-
+        if Reachability.isConnectedToNetwork() {
+            getValuesFromFRC()
+        }else {
+            self.showTryAgainAlert(title: "Hata", message: "Lütfen internet bağlantınızı kontrol ediniz.", isCancelable: false) { (_) in
+                self.viewDidLoad()
+            }
+        }
         // Do any additional setup after loading the view.
     }
     func getValuesFromFRC(){
@@ -32,5 +37,12 @@ class SplashVC: UIViewController {
         }
     }
 
+    
 
+}
+
+//MARK: Button Actions
+extension SplashVC {
+    @IBAction func startButtonAction(_ sender: Any) {
+    }
 }
